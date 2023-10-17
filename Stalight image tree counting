@@ -1,0 +1,6 @@
+from deepforest import main
+import matplotlib as plt
+m = main.deepforest()
+m.use_release()
+plot = m.predict_image(path="/content/Data/images.jpeg", return_plot=True)
+plt.pyplot.imshow(plot)
